@@ -13,12 +13,27 @@ Mathematician turned Full-Stack Developer with a background in computational sto
 
 ## Tech Stack
 
-**Backend:** PHP, Symfony, Node.js, REST APIs, Python  
-**Frontend:** JavaScript, Vue.js, Bootstrap, Chart.js, D3.js, HTML, CSS  
-**Data Science & Analytics:** R, Python, MATLAB  
-**Databases:** MySQL, MariaDB, PostgreSQL, MSSQL, SQLite  
-**Testing:** Jest, PHPUnit, Playwright, Robot, Selenium  
-**Security:** OWASP ZAP, Trivy, Dependabot, Socket.dev  
+**Backend**  
+[![Backend](https://skillicons.dev/icons?i=php,symfony,nodejs,python)](https://skillicons.dev)  
+REST APIs
+
+**Frontend**  
+[![Frontend](https://skillicons.dev/icons?i=js,vuejs,bootstrap,d3,html,css)](https://skillicons.dev)  
+Chart.js
+
+**Data Science & Analytics**  
+[![Data Science](https://skillicons.dev/icons?i=r,python,matlab)](https://skillicons.dev)
+
+**Databases**  
+[![Databases](https://skillicons.dev/icons?i=mysql,postgres,sqlite)](https://skillicons.dev)  
+MariaDB, MSSQL
+
+**Testing**  
+[![Testing](https://skillicons.dev/icons?i=jest,selenium)](https://skillicons.dev)  
+PHPUnit, Playwright, Robot
+
+**Security**  
+OWASP ZAP, Trivy, Dependabot, Socket.dev  
 
 ## Get in Touch
 
