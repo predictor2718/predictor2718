@@ -89,13 +89,11 @@ def generate_svg(
     lines.append(
         ".grid-line { stroke: #374151; stroke-width: 0.3; stroke-dasharray: 4 2; }"
     )
-    # Animation timing: 3s draw + 5s visible + 2s fade = 10s total per path
-    # Stagger start by 0.4s per path, so last path finishes drawing at ~5s
-    # Total cycle: 12s (with stagger headroom)
-    anim_duration = 12
-    draw_pct = 25       # 0-25%: draw in
-    visible_pct = 75    # 25-75%: stay visible
-    # 75-100%: fade out (reverse draw)
+    # Animation timing: 3s draw + 2s visible + 3s fade = 8s total per path
+    anim_duration = 8
+    draw_pct = 38       # 0-38%: draw in (~3s)
+    visible_pct = 62    # 38-62%: stay visible (~2s)
+    # 62-100%: fade out (~3s)
 
     for i in range(n_paths):
         pl = path_lengths[i]
