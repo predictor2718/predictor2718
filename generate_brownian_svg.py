@@ -89,6 +89,14 @@ def generate_svg(
     lines.append(
         ".grid-line { stroke: #374151; stroke-width: 0.3; stroke-dasharray: 4 2; }"
     )
+    # Animation timing: 3s draw + 5s visible + 2s fade = 10s total per path
+    # Stagger start by 0.4s per path, so last path finishes drawing at ~5s
+    # Total cycle: 12s (with stagger headroom)
+    anim_duration = 12
+    draw_pct = 25       # 0-25%: draw in
+    visible_pct = 75    # 25-75%: stay visible
+    # 75-100%: fade out (reverse draw)
+
     for i in range(n_paths):
         pl = path_lengths[i]
         lines.append(
@@ -96,14 +104,17 @@ def generate_svg(
             f" fill: none; stroke: {colors[i % len(colors)]};"
             f" stroke-width: 2; stroke-linecap: round;"
             f" opacity: 0.85;"
-            f" animation: draw-{i} 3s ease-out {i * 0.4}s forwards;"
+            f" animation: draw-{i} {anim_duration}s ease-in-out {i * 0.4}s infinite;"
             f" stroke-dasharray: {pl};"
             f" stroke-dashoffset: {pl};"
             f"}}"
         )
         lines.append(
             f"@keyframes draw-{i} {{"
-            f" to {{ stroke-dashoffset: 0; }}"
+            f" 0% {{ stroke-dashoffset: {pl}; }}"
+            f" {draw_pct}% {{ stroke-dashoffset: 0; }}"
+            f" {visible_pct}% {{ stroke-dashoffset: 0; }}"
+            f" 100% {{ stroke-dashoffset: {pl}; }}"
             f"}}"
         )
     lines.append("</style>")
