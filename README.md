@@ -1,5 +1,9 @@
 # Hi, I'm Nicolai
 
+<picture>
+  <img src="brownian_motion.svg" alt="Brownian Motion" width="800" />
+</picture>
+
 Mathematician turned Full-Stack Developer with a background in computational stochastics and years of professional software development experience.
 
 ## What I bring to the table
