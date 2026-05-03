@@ -42,3 +42,4 @@ OWASP ZAP, Trivy, Dependabot, Socket.dev
 ## Get in Touch
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/nicolai-ehrhardt-1ab759253/)
+[![Kaggle](https://img.shields.io/badge/Kaggle-20BEFF?style=flat&logo=kaggle&logoColor=white)](https://www.kaggle.com/nehrdata)
