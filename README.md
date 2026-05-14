@@ -36,6 +36,13 @@ MariaDB, MSSQL
 [![Testing](https://skillicons.dev/icons?i=jest,selenium)](https://skillicons.dev)  
 PHPUnit, Playwright, Robot
 
+**Infrastructure & DevOps**  
+[![Infra](https://skillicons.dev/icons?i=docker,ansible,githubactions,nginx,apache)](https://skillicons.dev)  
+LXC, NSIS, VMware, GitLab CI, IIS
+
+**Version Control**  
+[![VCS](https://skillicons.dev/icons?i=git,github,gitlab)](https://skillicons.dev)
+
 **Security**  
 OWASP ZAP, Trivy, Dependabot, Socket.dev  
 
